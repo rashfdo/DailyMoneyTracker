@@ -640,8 +640,10 @@ class MainActivity : ComponentActivity() {
         if (visible.isEmpty()) {
             add(
                 listBox,
-                label(txt("තවම සටහන් නැත",
-                    "No transactions yet"), 14f)
+               label(
+    txt("තවම සටහන් නැත", "No transactions yet"),
+    14f
+)
             )
             return
         }
