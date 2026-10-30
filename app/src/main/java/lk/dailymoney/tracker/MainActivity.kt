@@ -177,8 +177,12 @@ class MainActivity : ComponentActivity() {
         refresh()
     }
 
-    private fun txt(si: String, en: String) =
-        if (sinhala) si else en
+    private fun txt(
+    si: String,
+    en: String = si
+): String {
+    return if (sinhala) si else en
+}
 
     private fun today(): String =
         SimpleDateFormat("yyyy-MM-dd", Locale.US).format(Date())
